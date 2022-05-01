@@ -1,8 +1,8 @@
 *{
     margin: 0px;
     padding: 0px;
-    /* box-sizing: border-box;
-    border: 1px solid black; */
+    box-sizing: border-box;
+    border: 1px solid black;
 }
 
 body, .header, .top, .bottom, .sideBar, .content, 
@@ -20,9 +20,28 @@ body{
     grid-template-rows: repeat(2, 1fr);
     grid-area: 1 / 2 / 2 / 3;
 }
+
 .bottom, .top{
+    gap: 15px;
     grid-template-columns: 3fr 1fr;
 }
+.top > :nth-child(1){
+    grid-template-columns: minmax(max-content, 200px) minmax(250px, 1000px);
+    align-items: center;
+    gap: 30px;
+}
+.top > :nth-child(2){
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    
+}
+.search > img{
+    justify-self: end;
+}
+.searchBar{
+    height: min(50px, 100px);
+}
+
 .header > .top {
     /* grid-row-start: 1 / 2; */
 }
