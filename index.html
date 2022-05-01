@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@mdi/font@6.5.95/css/materialdesignicons.min.css">
     <script src="script.js" defer></script>
     <title>Admin Dashboard</title>
 </head>
@@ -15,13 +16,13 @@
 
         <div class="top">
             <div class="search">
-                <div class="searchIcon"></div>
-                <div class="searchBar"></div> </div>
+                <img src="images/search.svg" alt="Search"class="searchIcon"></img>
+                <input type="text" placeholder="Search.." class="searchBar"> </div>
            
             <div class="userMenu">
-                <div class="notification"></div>
-                <div class="userPicture"></div>
-                <div class="userDisplayName"></div> </div>
+                <div class="notification">img</div>
+                <div class="userPicture">img</div>
+                <div class="userDisplayName">img</div> </div>
         </div>
 
         <div class="bottom">
@@ -33,13 +34,187 @@
                     <p id="userName"></p>
                 </div>
             </div>
+            <div class="createButtons">
+                <button>New</button>
+                <button>Upload</button>
+                <button>Share</button>
+            </div>
         </div>
 
     </div>
 
-    <div class="sideBar"></div>
+    <div class="sideBar">
+        <div class="title">
+            <img src="images/dashboard.svg" alt="Dashboard">
+            <h1>Dashboard</h1>
+        </div>
+        <ul class="navMain">
+            <li>
+                <img src="images/home.svg" alt="Home">
+                <h3>Home</h3>
+            </li>
+            <li>
+                <img src="images/profile.svg" alt="Profile">
+                <h3>Profile</h3>
+            </li>
+            <li>
+                <img src="images/messages.svg" alt="Messages">
+                <h3>Messages</h3>
+            </li>
+            <li>
+                <img src="images/history.svg" alt="History">
+                <h3>History</h3>
+            </li>
+            <li>
+                <img src="images/tasks.svg" alt="Tasks">
+                <h3>Tasks</h3>
+            </li>
+            <li>
+                <img src="images/communities.svg" alt="Communities">
+                <h3>Communities</h3>
+            </li>
+        </ul>
+        <ul class="navBottom">
+            <li>
+                <img src="images/settings.svg" alt="Settings">
+                <h3>Settings</h3>
+            </li>
+            <li>
+                <img src="images/support.svg" alt="Support">
+                <h3>Support</h3>
+            </li>
+            <li>
+                <img src="images/privacy.svg" alt="Privacy">
+                <h3>Privacy</h3>
+            </li>
+        </ul>
+    </div>
     
-    <div class="content"></div>
+    <div class="content">
+        <div class="projects">
+            <h5>Your Projects</h5>
+            <div class="projectContainer">
+
+                <div class="projectOne">
+                    <div class="titleLayer">
+                        <h5>Super Cool Project</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum, deleniti.</p>
+                    </div>
+                    <div class="projectButtons">
+                        <button class="favourite"></button>
+                        <button class="watch"></button>
+                        <button class="share"></button>
+                    </div>
+                </div>
+
+                <div class="projectTwo">
+                    <div class="titleLayer">
+                        <h5>Super Cool Project</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum, deleniti.</p>
+                    </div>
+                    <div class="projectButtons">
+                        <button class="favourite"></button>
+                        <button class="watch"></button>
+                        <button class="share"></button>
+                    </div>
+                </div>
+
+                <div class="projectThree">
+                    <div class="titleLayer">
+                        <h5>Super Cool Project</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum, deleniti.</p>
+                    </div>
+                    <div class="projectButtons">
+                        <button class="favourite"></button>
+                        <button class="watch"></button>
+                        <button class="share"></button>
+                    </div>
+                </div>
+
+                <div class="projectFour">
+                    <div class="titleLayer">
+                        <h5>Super Cool Project</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum, deleniti.</p>
+                    </div>
+                    <div class="projectButtons">
+                        <button class="favourite"></button>
+                        <button class="watch"></button>
+                        <button class="share"></button>
+                    </div>
+                </div>
+
+                <div class="projectFive">
+                    <div class="titleLayer">
+                        <h5>Super Cool Project</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum, deleniti.</p>
+                    </div>
+                    <div class="projectButtons">
+                        <button class="favourite"></button>
+                        <button class="watch"></button>
+                        <button class="share"></button>
+                    </div>
+                </div>
+
+                <div class="projectSix">
+                    <div class="titleLayer">
+                        <h5>Super Cool Project</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum, deleniti.</p>
+                    </div>
+                    <div class="projectButtons">
+                        <button class="favourite"></button>
+                        <button class="watch"></button>
+                        <button class="share"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="rightContent">
+            <h5>Announcements</h5>
+            <div class="announcementsContainer">
+                <ul class="announcements">
+                    <li>
+                        <h6>Site Maintenance</h6>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, saepe!</p>
+                    </li>
+                    <li>
+                        <h6>Community Share Day</h6>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro, nihil.</p>
+                    </li>
+                    <li>
+                        <h6>Updated Privacy Policy</h6>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias, rerum.</p>
+                    </li>
+                </ul>
+            </div>
+            <h5>Trending</h5>
+            <div class="trendingContainer">
+                <ul class="trending">
+                    <li>
+                        <img src="" alt="James">
+                        <div class="trendingUserOne">
+                            <p>@james</p>
+                            <p>Aerospace Engineer</p>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="" alt="Kaitlyn">
+                        <div class="trendingUserTwo">
+                            <p>@kaitlyn</p>
+                            <p>Food Distribution Agencies</p>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="" alt="Carmen">
+                        <div class="trendingUserThree">
+                            <p>@carmen</p>
+                            <p>Financial Trading Solutions</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
     
 </body>
 </html>

@@ -3,5 +3,4 @@ let userName = "klavelon";
 //let imgSrc = "url('images/userPicture.jpg')";
 
 document.querySelector('#userNameFull').textContent = userNameFull;
-document.querySelector('#userName').textContent = userName;
-
+document.querySelector('#userName').textContent = "(@" + userName + ")";
