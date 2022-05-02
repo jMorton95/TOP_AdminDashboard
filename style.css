@@ -1,54 +1,78 @@
 *{
+    /*Soft Reset*/
     margin: 0px;
     padding: 0px;
-    box-sizing: border-box;
-    border: 1px solid black;
+    /*Temporary Box Lines to help positioning*/
+    /* box-sizing: border-box;
+    border: 1px solid black; */
 }
 
 body, .header, .top, .bottom, .sideBar, .content, 
- .search, .userMenu{
+ .search, .userMenu, .userGreeting, .greetingContainer,
+ .nameContainer, .createButtons{
     /*Selector to set the display to GRID exclusively*/
     display: grid;
 }
 
 body{
-    grid-template: 200px 4fr / 250px 4fr;
+    /*Overall Page Layout*/
+    grid-template: 200px 1fr / 250px 1fr;
 }
 
 /*ALL HEADER SELECTORS*/
 .header{
+    /*Display Header Content over two rows and specify where the Header is displayed on the page.*/
     grid-template-rows: repeat(2, 1fr);
     grid-area: 1 / 2 / 2 / 3;
 }
 
 .bottom, .top{
+    /*Define Header Portion Column sizing and add a slight gap*/
     gap: 15px;
     grid-template-columns: 3fr 1fr;
 }
-.top > :nth-child(1){
-    grid-template-columns: minmax(max-content, 200px) minmax(250px, 1000px);
+
+.top > :nth-child(1), .bottom > :nth-child(1){
+    /*Control Column Growth of the Header's Left side content.*/
+    grid-template-columns: minmax(1px, 125px) max-content minmax(250px, 1000px);
     align-items: center;
     gap: 30px;
 }
-.top > :nth-child(2){
+
+.top > :nth-child(2), .bottom > :nth-child(2){
+    /*Control positioning of the Header's Right side content.*/
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
-    
-}
-.search > img{
-    justify-self: end;
-}
-.searchBar{
-    height: min(50px, 100px);
 }
 
-.header > .top {
-    /* grid-row-start: 1 / 2; */
+.search > img, .userGreeting > img{
+    grid-column: 2 / 3;
+    justify-self: start;
 }
-.header > .bottom {
-    /* grid-row-start: 2 / 3; */
-    
+
+.searchBar{
+    height: 25px;
+    text-align: center;
+    grid-column: 3 / 4;
 }
+
+.userPicture{
+    height: 75px;
+    width: 75px;
+}
+
+.bottom, .bottom > div{
+    align-items: center;
+    gap: 15px;
+}
+
+.userGreeting > :nth-child(1){
+    justify-self: end;
+}
+
+
+
+
 
 /*ALL SIDEBAR SELECTORS*/
 .sidebar{
