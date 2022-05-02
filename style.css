@@ -49,8 +49,8 @@ li{
 
 .top > :nth-child(2), .bottom > :nth-child(2){
     /*Control positioning of the Header's Right side content.*/
-    grid-template-columns: repeat(3, 1fr) 100px;
-    gap: 10px;
+    grid-template-columns: repeat(3, max-content) 100px;
+    gap: 25px;
     align-items: center;
 }
 
@@ -77,16 +77,19 @@ li{
     background-color: pink;
 }
 
-
 .userGreeting > :nth-child(1){
+    /*Anchor User Picture to the right*/
     justify-self: end;
 }
 
 .nameContainer{
+    /*Align UserName on Page*/
     grid-template-columns: repeat(2, max-content);
+    gap: 5px;
 }
 
 .createButtons button{
+    /*Button Theme*/
     height: 35px;
     width: 100px;
     font-size: 18px;
@@ -96,6 +99,7 @@ li{
     border-radius: 22px;
 }
 
+/*Add Animations to all interactable content*/
 .createButtons button:hover, .notification:hover, .searchIcon:hover, .sideBar li:hover {
     scale:1.2;
 }
@@ -109,6 +113,7 @@ li{
 
 /*ALL SIDEBAR SELECTORS*/
 .sideBar{
+    /*Set SideBar Theme and Align Grid Items on Page*/
     padding-left: 15px;
     background-color: steelblue;
     grid-area: 1 / 1 / end / 2;
@@ -120,18 +125,37 @@ li{
     /*Change all SideBar Images to WHITE through a filter conversion*/
     filter: invert(98%) sepia(2%) saturate(0%) hue-rotate(185deg) brightness(111%) contrast(100%);
 }
+.title > img{
+    /*Make ONLY Title Image Larger*/
+    scale: 1.5;
+}
 
 .navMain, .navBottom, .title{
+    /*Assign Grid Row Size to All SideBar Sub-Grids*/
     grid-auto-rows: 40px;
 }
-.title{
-    padding-top: 25px;
-}
+
 .sideBar li, .title{
+    /*Position and Align All Sidebar Grid Items*/
     grid-template-columns: max-content 1fr;
     justify-self: left;
+}
+
+.sideBar li{
+    /*Slight Gap ONLY for Sidebar List Elements*/
     gap: 5px;
 }
+
+.title{
+    /*Add Spacing Specific to Title*/
+    gap: 25px;
+    padding-top: 25px;
+}
+.title *{
+    /*Center Align Title Grid Items*/
+    align-self: center;
+}
+
 
 /*ALL CONTENT BOX SELECTORS*/
 .content{
