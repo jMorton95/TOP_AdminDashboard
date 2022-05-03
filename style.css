@@ -3,12 +3,16 @@
     margin: 0px;
     padding: 0px;
     font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+    
 }
 
 body, .header, .top, .bottom, .sideBar, .content, 
  .search, .userMenu, .userGreeting, .greetingContainer,
  .nameContainer, .createButtons, .sideBar li, .sideBar > *, .projectContainer,
- .project, .projectsSection, .titleLayer, .projectButtons{
+ .project, .projectsSection, .titleLayer, .projectButtons, .rightContent,
+ .announcements{
+
     /*Selector to set the display to GRID exclusively*/
     display: grid;
 }
@@ -217,4 +221,30 @@ li{
     gap: 10px;
     justify-self: end;
     padding: 20px 20px 20px 0px;
+}
+
+.rightContent{
+    grid-template-rows: max-content 1fr max-content 1fr;
+    padding-top: 50px;
+    padding-right: 50px;
+}
+
+.announcementsContainer{
+    background-color: white;
+    box-shadow: 2px 3px 4px grey;
+    border-radius: 22px;
+}
+.announcements{
+    grid-template-rows: repeat(3, max-content);
+    justify-items: center;
+    gap: 5px;
+}
+
+.announcements li{
+    height: 100px;
+    width: max-content;
+}
+
+.announcements > :not(:last-child){
+    border-bottom: 1px solid black;
 }
