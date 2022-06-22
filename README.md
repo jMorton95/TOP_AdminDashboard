@@ -4,4 +4,4 @@ Admin Dashboard Project from Intermediate HTML &amp; CSS Module of The Odin Proj
 A Complex Project with an emphasis on layout and design. Requiring use of advanced CSS-Grid knowledge to control element positioning and sizing. 
 
 
-View Demo: https://klavelon.github.io/TOP_AdminDashboard/
+View Demo: https://jMorton95.github.io/TOP_AdminDashboard/
